@@ -1,0 +1,30 @@
+body {
+  font-family: sans-serif;
+  text-align: left;
+}
+
+h3 {
+  font: 1em sans-serif;
+}
+
+img {
+  border-radius: 8px;
+  padding: 3px;
+  width: 45px;
+}
+
+#mainbox {
+  background-color: black;
+  width: 576px;
+  border-radius: 10px;
+  border-color: whitesmoke;
+  margin: 1em;
+  padding: 15px;
+  display: table;
+  background-image: url("image/passbackground.png");
+}
+
+#passbox {
+  width: 500px;
+  display: inline-block;
+}
