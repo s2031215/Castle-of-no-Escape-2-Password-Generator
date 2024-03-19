@@ -86,21 +86,21 @@ window.onload = function () {
     function numformant(num) {
         switch (num) {
             case 0:
-                return "🡹";
+                return "⬆️";
             case 1:
-                return "🡻";
+                return "⬇️";
             case 2:
-                return "🡸";
+                return "⬅️";
             case 3:
-                return "🡺";
+                return "➡️";
             case 4:
-                return "Z";
+                return "🆉";
             case 5:
-                return "X";
+                return "🆇";
             case 6:
-                return "C";
+                return "🅲";
             case 7:
-                return "E";
+                return "↩️";
             default:
                 return;
         }
