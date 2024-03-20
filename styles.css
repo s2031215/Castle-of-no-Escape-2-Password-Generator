@@ -13,6 +13,18 @@ img {
   width: 45px;
 }
 
+.codebox{
+  border: 3px solid;
+  text-align: center;
+  margin: 1px;
+  width: 20px;
+  padding: 0;
+}
+
+.coderow{
+  max-width: 420px;
+}
+
 #mainbox {
   background-color: black;
   width: 576px;

@@ -74,9 +74,9 @@ window.onload = function () {
 
                 for (let i = 0; i < 13; i++) {
                     cmd += numformant(parseInt(bin.slice(i * 3, i * 3 + 3), 2));
-                    if ((i + 1) % 3 === 0 && i !== 0) {
-                        cmd += "    ";
-                    }
+                    //if ((i + 1) % 3 === 0 && i !== 0) {
+                    //    cmd += "    ";
+                    //}
                 }
                 return cmd;
             }
@@ -84,25 +84,27 @@ window.onload = function () {
     });
 
     function numformant(num) {
+        let code
         switch (num) {
             case 0:
-                return "⬆️";
+                code = "⬆"; break;
             case 1:
-                return "⬇️";
+                code = "⬇"; break;
             case 2:
-                return "⬅️";
+                code = "⬅"; break;
             case 3:
-                return "➡️";
+                code = "⮕"; break;
             case 4:
-                return "🆉";
+                code = "🆉"; break;
             case 5:
-                return "🆇";
+                code = "🆇"; break;
             case 6:
-                return "🅲";
+                code = "🅲"; break;
             case 7:
-                return "↩️";
+                code = "⤶"; break;
             default:
-                return;
+                code = " "; break;
         }
+        return '<div class="col codebox" >'+code+'</div>'
     }
 }

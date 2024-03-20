@@ -54,7 +54,9 @@
     </div>
     <h5>Password</h5>
     <!-- <p class="text">{{bincode}}</p> -->
-    <p class="text">{{passcode}}</p>
+    <div class="container">
+        <div class="row coderow" v-html="passcode"></div>
+    </div>
     <h5>Seed</h5>
     <input type="number" v-model="seed" />
     <br />
