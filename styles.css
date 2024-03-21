@@ -25,6 +25,14 @@ img {
   max-width: 420px;
 }
 
+#CnE2{
+  width: 600px;
+  margin: auto;
+  border: 3px solid rgb(0, 0, 0);
+  padding: 10px;
+  margin-top: 20px;
+}
+
 #mainbox {
   background-color: black;
   width: 576px;
