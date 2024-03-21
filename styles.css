@@ -4,14 +4,19 @@
   }
 }
 
+@font-face {
+  font-family: rpg;
+  src: url(./SuperLegendBoy-4w8Y.ttf);
+}
+
 
 body {
-  font-family: sans-serif;
+  font-family: rpg;
   text-align: left;
 }
 
 h3 {
-  font: 1em sans-serif;
+  font: 1em;
 }
 
 img {
