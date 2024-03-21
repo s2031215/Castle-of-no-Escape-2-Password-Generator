@@ -1,7 +1,11 @@
-@media screen and (min-width: 901px) {
+@media screen and (max-width: 600px) {
   @viewport {
     width: 720px;
-    zoom: 0.75;
+    zoom: 2;
+  }
+
+  body {
+    background-color: rgb(231, 231, 231);
   }
 }
 
