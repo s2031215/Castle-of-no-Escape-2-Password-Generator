@@ -1,3 +1,11 @@
+@media screen and (min-width: 901px) {
+  @viewport {
+    width: 720px;
+    zoom: 1.5;
+  }
+}
+
+
 body {
   font-family: sans-serif;
   text-align: left;
@@ -13,7 +21,7 @@ img {
   width: 45px;
 }
 
-.codebox{
+.codebox {
   border: 3px solid;
   text-align: center;
   margin: 1px;
@@ -21,11 +29,11 @@ img {
   padding: 0;
 }
 
-.coderow{
+.coderow {
   max-width: 420px;
 }
 
-#CnE2{
+#CnE2 {
   width: 600px;
   margin: auto;
   border: 3px solid rgb(0, 0, 0);
