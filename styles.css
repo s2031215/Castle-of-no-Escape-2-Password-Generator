@@ -1,7 +1,7 @@
 @media screen and (min-width: 901px) {
   @viewport {
     width: 720px;
-    zoom: 1.5;
+    zoom: 0.75;
   }
 }
 
