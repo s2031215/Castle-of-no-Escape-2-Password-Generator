@@ -101,7 +101,7 @@ window.onload = function () {
             case 6:
                 code = "🅲"; break;
             case 7:
-                code = "⤶"; break;
+                code = "🅴"; break;
             default:
                 code = " "; break;
         }

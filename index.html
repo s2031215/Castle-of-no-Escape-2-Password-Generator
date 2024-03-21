@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="theme-color" content="#000000" />
   <title>Castle of no Escape 2 Password Generator</title>
   <!-- bootstrap minified CSS -->
@@ -56,6 +56,7 @@
     <!-- <p class="text">{{bincode}}</p> -->
     <div class="container">
         <div class="row coderow" v-html="passcode"></div>
+        <p> 🅴 = Enter</p>
     </div>
     <h5>Seed</h5>
     <input type="number" v-model="seed" />
