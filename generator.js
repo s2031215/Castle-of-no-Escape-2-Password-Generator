@@ -74,9 +74,9 @@ window.onload = function () {
 
                 for (let i = 0; i < 13; i++) {
                     cmd += numformant(parseInt(bin.slice(i * 3, i * 3 + 3), 2));
-                    //if ((i + 1) % 3 === 0 && i !== 0) {
-                    //    cmd += "    ";
-                    //}
+                    if ((i + 1) % 3 === 0 && i !== 0) {
+                        //cmd += '<div class="col"></div>';
+                    }
                 }
                 return cmd;
             }
@@ -105,6 +105,6 @@ window.onload = function () {
             default:
                 code = " "; break;
         }
-        return '<div class="col codebox" >'+code+'</div>'
+        return '<div class="col boxborder" >'+code+'</div>'
     }
 }

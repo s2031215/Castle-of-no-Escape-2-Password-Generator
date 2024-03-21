@@ -16,7 +16,7 @@ body {
 }
 
 h3 {
-  font: 1em;
+  font: 2em;
 }
 
 img {
@@ -25,23 +25,32 @@ img {
   width: 45px;
 }
 
-.codebox {
-  border: 3px solid;
-  text-align: center;
-  margin: 1px;
-  width: 20px;
-  padding: 0;
+.coderow {
+  max-width: 600px;
 }
 
-.coderow {
-  max-width: 420px;
+.coderow div {
+  text-align: center;
+  margin: 1px;
+  padding: 0;
+  font-size: 30px;
+}
+
+.boxborder {
+  border: 3px solid;
+}
+
+#rootbox{
+  width: 720px;
+  margin: 20px;
+  padding: 10px;
 }
 
 #CnE2 {
-  width: 630px;
+  width: 650px;
   margin: 20px;
   border: 3px solid rgb(0, 0, 0);
-  padding: 10px;
+  padding: 20px;
   border-radius: 15px;
 }
 
