@@ -1,9 +1,4 @@
 @media screen and (max-width: 600px) {
-  @viewport {
-    width: 720px;
-    zoom: 2;
-  }
-
   body {
     background-color: rgb(231, 231, 231);
   }
