@@ -27,8 +27,12 @@ body {
   text-align: left;
 }
 
-h3 {
-  font: 2em;
+h4 {
+  text-align: center;
+}
+
+h5 {
+  margin-top: 25px;
 }
 
 img {
