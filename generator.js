@@ -73,10 +73,14 @@ window.onload = function () {
                 var cmd = "";
 
                 for (let i = 0; i < 13; i++) {
-                    cmd += numformant(parseInt(bin.slice(i * 3, i * 3 + 3), 2));
+                    let code = numformant(parseInt(bin.slice(i * 3, i * 3 + 3), 2));
                     if ((i + 1) % 3 === 0 && i !== 0) {
-                        //cmd += '<div class="col"></div>';
+                        cmd += '<div class="col boxrightspace">'
+                    } else {
+                        cmd += '<div class="col">';
                     }
+                    cmd += code + '</div>';
+
                 }
                 return cmd;
             }
@@ -105,6 +109,6 @@ window.onload = function () {
             default:
                 code = " "; break;
         }
-        return '<div class="col boxborder" >'+code+'</div>'
+        return code
     }
 }

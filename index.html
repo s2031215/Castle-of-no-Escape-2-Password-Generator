@@ -18,7 +18,7 @@
 
 <body>
   <div id="rootbox">
-    <h3>Castle of no Escape 2 Password Generator</h3>
+    <h4>Castle of no Escape 2 Password Generator</h4>
     <div id="CnE2">
       <div id="mainbox">
         <div id="passbox">
@@ -53,65 +53,67 @@
           </div>
         </div>
       </div>
-      <h5>Password</h5>
-      <!-- <p class="text">{{bincode}}</p> -->
-      <div class="container">
-        <div class="row coderow" v-html="passcode"></div>
-        <p> 🅴 = Enter</p>
+      <div id="selectbox">
+        <h5>Password</h5>
+        <!-- <p class="text">{{bincode}}</p> -->
+        <div class="container">
+          <div class="row coderow" v-html="passcode"></div>
+          <p> 🅴 = Enter</p>
+        </div>
+        <h5>Seed</h5>
+        <input type="number" v-model="seed" />
+        <br />
+        <h5>Player Characters:</h5>
+        <select v-model="char">
+          <option disabled value="">Please select one</option>
+          <option value="1">Guardsman</option>
+          <option value="2">Huntress</option>
+          <option value="3">Cardinal</option>
+          <option value="4">Champion</option>
+          <option value="5">Bandit</option>
+          <option value="6">Shamaness</option>
+        </select>
+        <br />
+        <h5>Artefacts:</h5>
+        <label>See the truth</label>
+        <input type="checkbox" v-model="artefacts.stt" />
+        <label>Remember us</label>
+        <input type="checkbox" v-model="artefacts.ru" />
+        <label>Faster than wind</label>
+        <input type="checkbox" v-model="artefacts.ftw" />
+        <label>Ever even</label>
+        <input type="checkbox" v-model="artefacts.ee" />
+        <label>Eternal dawn</label>
+        <input type="checkbox" v-model="artefacts.ed" />
+        <label>Blue fiew</label>
+        <input type="checkbox" v-model="artefacts.bf" />
+        <label>Golden sign</label>
+        <input type="checkbox" v-model="artefacts.gs" />
+        <br />
+        <h5>Armor</h5>
+        <label>0</label>
+        <input type="radio" value="0" v-model="armor" />
+        <label>1</label>
+        <input type="radio" value="1" v-model="armor" />
+        <label>2</label>
+        <input type="radio" value="2" v-model="armor" />
+        <label>3</label>
+        <input type="radio" value="3" v-model="armor" />
+        <label>4</label>
+        <input type="radio" value="4" v-model="armor" />
+        <label>5</label>
+        <input type="radio" value="5" v-model="armor" />
+        <label>6+</label>
+        <input type="radio" value="6" v-model="armor" />
+        <br />
+        <h5>Sword</h5>
+        <select v-model="sword">
+          <option disabled value="">Please select one</option>
+          <option>Empty</option>
+          <option>False Sword</option>
+          <option>Real Sword</option>
+        </select>
       </div>
-      <h5>Seed</h5>
-      <input type="number" v-model="seed" />
-      <br />
-      <h5>Player Characters:</h5>
-      <select v-model="char">
-        <option disabled value="">Please select one</option>
-        <option value="1">Guardsman</option>
-        <option value="2">Huntress</option>
-        <option value="3">Cardinal</option>
-        <option value="4">Champion</option>
-        <option value="5">Bandit</option>
-        <option value="6">Shamaness</option>
-      </select>
-      <br />
-      <h5>Artefacts:</h5>
-      <label>See the truth</label>
-      <input type="checkbox" v-model="artefacts.stt" />
-      <label>Remember us</label>
-      <input type="checkbox" v-model="artefacts.ru" />
-      <label>Faster than wind</label>
-      <input type="checkbox" v-model="artefacts.ftw" />
-      <label>Ever even</label>
-      <input type="checkbox" v-model="artefacts.ee" />
-      <label>Eternal dawn</label>
-      <input type="checkbox" v-model="artefacts.ed" />
-      <label>Blue fiew</label>
-      <input type="checkbox" v-model="artefacts.bf" />
-      <label>Golden sign</label>
-      <input type="checkbox" v-model="artefacts.gs" />
-      <br />
-      <h5>Armor</h5>
-      <label>0</label>
-      <input type="radio" value="0" v-model="armor" />
-      <label>1</label>
-      <input type="radio" value="1" v-model="armor" />
-      <label>2</label>
-      <input type="radio" value="2" v-model="armor" />
-      <label>3</label>
-      <input type="radio" value="3" v-model="armor" />
-      <label>4</label>
-      <input type="radio" value="4" v-model="armor" />
-      <label>5</label>
-      <input type="radio" value="5" v-model="armor" />
-      <label>6+</label>
-      <input type="radio" value="6" v-model="armor" />
-      <br />
-      <h5>Sword</h5>
-      <select v-model="sword">
-        <option disabled value="">Please select one</option>
-        <option>Empty</option>
-        <option>False Sword</option>
-        <option>Real Sword</option>
-      </select>
     </div>
   </div>
 </body>

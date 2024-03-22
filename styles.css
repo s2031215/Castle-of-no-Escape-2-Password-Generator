@@ -4,6 +4,18 @@
   }
 }
 
+@media screen and (min-width: 601px) {
+  body {
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    justify-content: center;
+  }
+
+  #selectbox {
+    font: 1em;
+  }
+}
+
 @font-face {
   font-family: rpg;
   src: url(./SuperLegendBoy-4w8Y.ttf);
@@ -30,17 +42,18 @@ img {
 }
 
 .coderow div {
+  border: 3px solid;
   text-align: center;
   margin: 1px;
   padding: 0;
   font-size: 30px;
 }
 
-.boxborder {
-  border: 3px solid;
+.boxrightspace {
+  margin-right: 10px !important;
 }
 
-#rootbox{
+#rootbox {
   width: 720px;
   margin: 20px;
   padding: 10px;
