@@ -99,36 +99,30 @@
           <option value="5">Bandit</option>
           <option value="6">Shamaness</option>
         </select>
-        <br />
-        <h5>Artefacts:</h5>
-        <label>
-          <input type="checkbox" class="largerCheckbox" v-model="artefacts.stt" /> See the truth
-        </label>
-        <br />
-        <label>
-          <input type="checkbox" class="largerCheckbox" v-model="artefacts.ru" /> Remember us
-        </label>
-        <br />
-        <label>
-          <input type="checkbox" class="largerCheckbox" v-model="artefacts.ftw" /> Faster than wind
-        </label>
-        <br />
-        <label>
-          <input type="checkbox" class="largerCheckbox" v-model="artefacts.ee" /> Ever even
-        </label>
-        <br />
-        <label>
-          <input type="checkbox" class="largerCheckbox" v-model="artefacts.ed" /> Eternal dawn
-        </label>
-        <br />
-        <label>
-          <input type="checkbox" class="largerCheckbox" v-model="artefacts.bf" /> Blue fiew
-        </label>
-        <br />
-        <label>
-          <input type="checkbox" class="largerCheckbox" v-model="artefacts.gs" /> Golden sign
-        </label>
-        <br />
+        <div id="checkbox">
+          <h5>Artefacts:</h5>
+          <label>
+            <input type="checkbox" class="largerCheckbox" v-model="artefacts.stt" /> See the truth
+          </label>
+          <label>
+            <input type="checkbox" class="largerCheckbox" v-model="artefacts.ru" /> Remember us
+          </label>
+          <label>
+            <input type="checkbox" class="largerCheckbox" v-model="artefacts.ftw" /> Faster than wind
+          </label>
+          <label>
+            <input type="checkbox" class="largerCheckbox" v-model="artefacts.ee" /> Ever even
+          </label>
+          <label>
+            <input type="checkbox" class="largerCheckbox" v-model="artefacts.ed" /> Eternal dawn
+          </label>
+          <label>
+            <input type="checkbox" class="largerCheckbox" v-model="artefacts.bf" /> Blue fiew
+          </label>
+          <label>
+            <input type="checkbox" class="largerCheckbox" v-model="artefacts.gs" /> Golden sign
+          </label>
+        </div>
         <h5>Armor</h5>
         <label>0</label>
         <input type="radio" value="0" v-model="armor" />
@@ -144,7 +138,6 @@
         <input type="radio" value="5" v-model="armor" />
         <label>6+</label>
         <input type="radio" value="6" v-model="armor" />
-        <br />
         <h5>Sword</h5>
         <select v-model="sword">
           <option disabled value="">Please select one</option>

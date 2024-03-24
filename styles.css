@@ -2,6 +2,10 @@
   body {
     background-color: rgb(231, 231, 231);
   }
+
+  #checkbox label{
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 601px) {
@@ -13,6 +17,10 @@
 
   #selectbox {
     font: 1em;
+  }
+
+  #checkbox label{
+    width: 250px;
   }
 }
 
